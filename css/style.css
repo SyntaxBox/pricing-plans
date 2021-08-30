@@ -1,0 +1,180 @@
+:root {
+  --pink-color: rgb(252 81 133);
+  --purple-color: rgb(172 71 255);
+  --text-color: rgb(47 28 106);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  font-family: Nunito;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.container h1 {
+  margin: 0;
+}
+
+.container h2 {
+  margin: 10px;
+}
+
+.container h3 {
+  margin: 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.container h4 {
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.container span {
+  font-weight: bolder;
+  font-size: 16px !important;
+}
+
+.container h4 span {
+  font-size: 28px !important;
+}
+
+.container .plans-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .plans-container .plan {
+  flex: 12rem;
+  width: 300px;
+  margin: 10px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--purple-color);
+  box-shadow: rgb(0 0 255 / 13%) 4px 6px 9px 1px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.container .plans-container .plan:nth-child(2) {
+  position: relative;
+  border: 1px solid var(--pink-color);
+  box-shadow: rgb(255 0 0 / 13%) 4px 6px 9px 1px;
+  border-radius: 0 0 6px 6px;
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  -ms-border-radius: 0 0 6px 6px;
+  -o-border-radius: 0 0 6px 6px;
+}
+
+.container .plans-container .plan:nth-child(2)::before {
+  content: "Recommended";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 35px;
+  top: -37px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid var(--pink-color);
+  background-color: var(--pink-color);
+  border-radius: 6px 6px 0 0;
+  -webkit-border-radius: 6px 6px 0 0;
+  -moz-border-radius: 6px 6px 0 0;
+  -ms-border-radius: 6px 6px 0 0;
+  -o-border-radius: 6px 6px 0 0;
+}
+
+.container button {
+  border: none;
+  outline: none;
+  margin: 10px 0 20px 0;
+  padding: 10px 60px;
+  color: #fff;
+  background-color: var(--purple-color);
+  font-weight: bold;
+  font-size: 17px;
+  transition: 0.2s;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+.container .plans-container .plan:nth-child(2) button {
+  background-color: var(--pink-color);
+}
+
+.container .plans-container button:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.container .plans-container .plan .features {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.fa-check {
+  color: green;
+  margin-right: 10px;
+}
+
+.fa-times {
+  color: red;
+  margin-right: 15px;
+}
+
+.container .plans-container p {
+  margin: 5px;
+  font-size: 14px;
+}
+
+.container .plans-container .plan a {
+  color: var(--purple-color);
+  margin: 15px;
+}
+
+.container .plans-container .plan:nth-child(2) a {
+  color: var(--pink-color);
+}
+
+.container .plans-container .plan a i {
+  margin-right: 15px;
+}
+
+@media (max-width: 482px) {
+  .container .plans-container .plan:first-child {
+    margin-bottom: 50px;
+  }
+}
